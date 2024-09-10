@@ -57,10 +57,10 @@ ChemPotEqualHC::ChemPotEqualHC(const InputParameters & parameters)
 ADReal
 ChemPotEqualHC::computeQpResidual()
 {
-  ADReal _mua = _mu0a[_qp] + _kT * std::log(_u[_qp] / (1.0 - _u[_qp])) +
-                _za[_qp] * 1.602e-19 * _phi[_qp];
-  ADReal _mub = _mu0b[_qp] + _kT * std::log(_cb[_qp] / (1.0 - _cb[_qp])) +
-                _zb[_qp] * 1.602e-19 * _phi[_qp];
+  ADReal _mua =
+      _mu0a[_qp] + _kT * std::log(_u[_qp] / (1.0 - _u[_qp])) + _za[_qp] * 1.602e-19 * _phi[_qp];
+  ADReal _mub =
+      _mu0b[_qp] + _kT * std::log(_cb[_qp] / (1.0 - _cb[_qp])) + _zb[_qp] * 1.602e-19 * _phi[_qp];
   return (_mua + _mub) * _test[_i][_qp];
 }
 

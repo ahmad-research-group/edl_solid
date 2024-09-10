@@ -19,7 +19,7 @@ protected:
   const ADMaterialProperty<Real> &_mu0a, &_mu0b;
   const ADVariableValue &_cb, &_phi;
   const ADMaterialProperty<Real> &_za, &_zb;
-  const Real &_kT;
+  const Real & _kT;
 
   //   /// Interfacial parameter
   //   const ADMaterialProperty<Real> & _kappa;

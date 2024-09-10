@@ -16,11 +16,11 @@ protected:
   virtual ADReal computeQpResidual();
 
   /// Mobility
-  const Real &_mutarget;
-  const ADMaterialProperty<Real> &_mu0;
+  const Real & _mutarget;
+  const ADMaterialProperty<Real> & _mu0;
   const ADVariableValue &_cb, &_phi;
-  const ADMaterialProperty<Real> &_z;
-  const Real &_kT;
+  const ADMaterialProperty<Real> & _z;
+  const Real & _kT;
 
   //   /// Interfacial parameter
   //   const ADMaterialProperty<Real> & _kappa;

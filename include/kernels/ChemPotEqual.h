@@ -15,7 +15,6 @@ public:
 protected:
   virtual ADReal computeQpResidual();
 
-  const ADMaterialProperty<Real> &_mua;
-  const ADMaterialProperty<Real> &_mub;
-
+  const ADMaterialProperty<Real> & _mua;
+  const ADMaterialProperty<Real> & _mub;
 };

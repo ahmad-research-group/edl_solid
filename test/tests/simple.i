@@ -3,7 +3,7 @@
   [./mesh]
    dim = 1
    type = GeneratedMeshGenerator
-   nx = 1e4
+   nx = 1e3
    xmax = 10e-6 # 100 micron thickness of solid electrolyte
   [../]
 []
@@ -65,7 +65,7 @@
 []
  
 [Kernels]
-  active = 'diff rhobyeps_term chempot_eqbm chempotvalue'
+  active = 'diff rhobyeps_term chem_pot_eqbm chempotvalue'
   [./diff]
     type = Diffusion
     variable = phi
