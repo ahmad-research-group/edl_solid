@@ -179,8 +179,8 @@
   nl_rel_tol = 1e-8
   nl_abs_tol = 1e-12
   petsc_options = '-snes_monitor -ksp_monitor_true_residual -snes_converged_reason -ksp_converged_reason'
-  petsc_options_iname = '-pc_type -ksp_gmres_restart -sub_ksp_type -sub_pc_type -pc_asm_overlap'
-  petsc_options_value = 'asm      31                  preonly      lu          4'
+  petsc_options_iname = '-pc_type -ksp_gmres_restart -sub_ksp_type -sub_pc_type -pc_asm_overlap -snes_type'
+  petsc_options_value = 'asm      31                  preonly      lu          4 vinewtonssls'
 #  line_search = 'none'
 []
 			       
