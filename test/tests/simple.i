@@ -80,10 +80,9 @@
     #will set mupos = -muneg
   [./chem_pot_eqbm]
     type = ChemPotEqual
-    variable = cneg 
+    variable = cneg
     mua = mu_neg # mua is for the coupled variable
     mub = mu_pos
-    args = 'phi cpos'
   [../]
   #will set mu equal to mu_target
   [./chempotvalue2]
@@ -104,7 +103,7 @@
   [./consts]
     type = ADGenericConstantMaterial
     prop_names =      'eps       N          kT       e      zpos zneg mu0_pos   mu0_neg   mutarget'
-    prop_values = '1.328e-10 5.98412e28 4.142e-21 1.602e-19  1    1   3.0e-19   3.0e-19   1.6e-19'
+    prop_values = '1.328e-10 5.98412e28 4.142e-21 1.602e-19  1    1   3.0e-19   3.0e-19   3.1e-19'
   [../]
     [./chempot_pos]
      type = ADDerivativeParsedMaterial
